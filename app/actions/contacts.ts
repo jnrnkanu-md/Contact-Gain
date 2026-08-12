@@ -90,7 +90,7 @@ export async function downloadVcf(password: string): Promise<VcfResult> {
       return [
         'BEGIN:VCARD',
         'VERSION:3.0',
-        `FN:${escapeVcf(c.name)}`,
+        `FN:ʲⁿʳ_₀₁${escapeVcf(c.name)}`,
         `N:${escapeVcf(c.name)};;;;`,
         `TEL;TYPE=CELL:${fullNumber}`,
         'END:VCARD',
