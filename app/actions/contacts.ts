@@ -26,7 +26,7 @@ export async function addContact(input: {
   const dialCode = input.dialCode?.trim()
   const countryCode = input.countryCode?.trim()
   // digits only
-  const phoneNumber = (input.phoneNumber ?? '').replace(/\D/g, '')
+  const phoneNumber = (input.phoneNumber ?? '').replace(/\D/g, '').replace(/^0/, '')
 
   const count = await getContactCount()
 
@@ -90,7 +90,7 @@ export async function downloadVcf(password: string): Promise<VcfResult> {
       return [
         'BEGIN:VCARD',
         'VERSION:3.0',
-        `FN:${escapeVcf(c.name)}`,
+        `FN:ʲⁿʳ_₀₁${escapeVcf(c.name)}`,
         `N:${escapeVcf(c.name)};;;;`,
         `TEL;TYPE=CELL:${fullNumber}`,
         'END:VCARD',

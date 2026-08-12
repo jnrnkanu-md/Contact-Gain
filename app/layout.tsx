@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Join Our Community · Contact Collector',
+  title: 'Join Our Community To Get download code · Contact Collector',
   description:
     'Add your name and phone number to join our WhatsApp community. Limited to 1000 members.',
   generator: 'v0.app',
