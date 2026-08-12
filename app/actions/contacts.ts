@@ -26,7 +26,7 @@ export async function addContact(input: {
   const dialCode = input.dialCode?.trim()
   const countryCode = input.countryCode?.trim()
   // digits only
-  const phoneNumber = (input.phoneNumber ?? '').replace(/\D/g, '')
+  const phoneNumber = (input.phoneNumber ?? '').replace(/\D/g, '').replace(/^0/, '')
 
   const count = await getContactCount()
 
