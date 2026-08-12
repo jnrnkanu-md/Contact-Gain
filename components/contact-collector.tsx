@@ -119,7 +119,7 @@ export function ContactCollector({ initialCount }: { initialCount: number }) {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Jane Doe"
+              placeholder="Jnr Nkanu"
               disabled={full || pending}
               className="h-12 w-full rounded-xl border border-input bg-card px-3 text-sm text-foreground outline-none transition-colors focus:ring-2 focus:ring-ring disabled:opacity-50"
             />
